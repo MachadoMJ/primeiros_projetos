@@ -1,0 +1,19 @@
+<HTML>
+    <HEAD>
+        <TITLE>POSSO DIRIGIR?</TITLE>
+        <META CHATSET = "UTF-8">
+    </HEAD>
+    <BODY>
+        <H1>JÁ POSSO DIRIGIR ?</H1>
+    </BODY>
+</HTML>
+<SCRIPT>
+    var idade = Math.round((Math.random()*100)-10)    
+    var carteira = prompt("você tem carteira de motorista? sim(S) não(N)");
+
+    if (idade >= 30 && carteira == "S"){
+        document.write("<h1>você já pode dirigir !!</h1>")
+    }else{
+        document.write("<h1>você não pode dirigir !!</h1>")
+    }
+</SCRIPT>

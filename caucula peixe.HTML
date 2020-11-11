@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>caucula peixe</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>CALCULA PEIXE:</h1>
+    </body>
+</html>
+<script>
+
+    var peixe = parseInt( prompt("digite o valor do peixe:"));
+
+document.write("peso do peixe : " + peixe + "<br><br>")
+
+    if (peixe > 50){
+        document.write("a multa é de R$:" + (peixe-50)*4 );
+    }
+
+    if (peixe < 50){
+        document.write("sem multa");
+    }
+    
+    if (peixe == 50){
+        document.write("sortudo");
+    }
+
+</script>

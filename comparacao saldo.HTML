@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>compare seu saldo</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>compare seu saldo com o amigo:</h1>
+    </body>
+</html>
+<script>
+    function escreva (escreva){
+        return document.write(escreva + "<br>");
+    }
+    var Mynom = prompt("qual o seu nome ?") 
+    var MYsal = parseInt( prompt(Mynom +  " digite o seu saldo para compara com outro "));
+    var YOUnom = prompt("qual o seu nome ?")
+    var YOUsal = parseInt( prompt( YOUnom + " digite seu saldo:"));
+
+escreva("<b>saldo do </b>" + Mynom + " <b>é</b> " + MYsal);
+escreva("<br><b>saldo do </b>" + YOUnom + "<b> é </b>" + YOUsal);
+
+    if (YOUsal > MYsal){
+        escreva("<br><br><i>o saldo do </i>" + YOUnom + "<i> é maior do que o do </i>" + Mynom);
+    }
+    if (YOUsal < MYsal){
+        escreva("<br><br<i>o saldo do </i>" + YOUnom + "<i> é menor do que o do </i>" + Mynom);
+    }
+    if (YOUsal == MYsal){
+        escreva("<br><br><i>empate</i>");
+    }
+
+</script>
